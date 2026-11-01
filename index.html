@@ -122,7 +122,7 @@ let P=ld("rk_people",["Abhishek","Kaushal","Gajendra"]);
 let D=ld("rk_data",ld("roomkharcha",[]));
 let K=ld("rk_pins",{});
 let room=ld("rk_room","");let db=null,ref=null;
-const FB={apiKey:"",authDomain:"",databaseURL:"",projectId:"",appId:""};
+const FB={apiKey:"AIzaSyC1evrtwdo_ZZthC8qJZIGgTNkkvb5wBhE",authDomain:"room-expensive.firebaseapp.com",databaseURL:"https://room-expensive-default-rtdb.asia-southeast1.firebasedatabase.app",projectId:"room-expensive",appId:"1:201727580472:web:9eeb6457f0a61b588909cd"};
 D.forEach(x=>{if(!x.parts||!x.parts.length)x.parts=[...P]});
 const save=()=>{try{localStorage.setItem("rk_people",JSON.stringify(P));localStorage.setItem("rk_data",JSON.stringify(D));localStorage.setItem("rk_pins",JSON.stringify(K));localStorage.setItem("rk_room",JSON.stringify(room))}catch(e){}};
 const h=s=>{let x=5381;for(const c of "rk|"+s)x=((x<<5)+x+c.charCodeAt(0))|0;return x};
